@@ -1,0 +1,90 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="1dip">
+
+        <!-- 第1个TableLayout，使用可伸展特性，并指定每个控件宽度一致，如1dip-->
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+
+            >
+            <TableRow>
+            <TextView
+                android:text="九有科技（北京）有限公司"
+                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:textSize="25sp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/photo_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:src="@drawable/banner2" />
+            </TableRow>
+        </TableLayout>
+
+
+        <!-- 第3个TableLayout，使用可伸展特性布局-->
+
+        <TableLayout
+            android:id="@+id/table3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:padding="3dip"
+            >
+            <TableRow>
+                <ImageView
+                    android:id="@+id/photo1"
+                    android:src="@drawable/icon1"
+                    android:layout_width="1dip"></ImageView>
+
+                <ImageView
+                    android:id="@+id/photo2"
+                    android:src="@drawable/icon2"
+                    android:layout_width="1dip"></ImageView>
+
+                <ImageView
+                    android:id="@+id/photo3"
+                    android:src="@drawable/icon3"
+                    android:layout_width="1dip"></ImageView>
+
+            </TableRow>
+        </TableLayout>
+
+        <!-- 第4个TableLayout，使用可伸展特性，并指定每个控件宽度一致，如1dip-->
+
+        <TableLayout
+            android:id="@+id/table4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+
+            >
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/photo_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:src="@drawable/banner1" />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:text="©2017 九有科技（北京）有限公司 京ICP备：17026986号 "
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+    </LinearLayout>

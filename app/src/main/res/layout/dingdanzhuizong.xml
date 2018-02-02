@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="1dip"
+    android:gravity="center_vertical">
+
+    <!-- 第1个TableLayout-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <EditText
+            android:id="@+id/dingdanzhuizong_dingdanhao"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/border_line_while"
+            android:text="   请输入订单号查询   "
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/dingdanzhuizong_name"
+            android:layout_alignBottom="@+id/dingdanzhuizong_name"
+            android:layout_toRightOf="@+id/dingdanzhuizong_name"
+            android:layout_toEndOf="@+id/dingdanzhuizong_name" />
+
+
+        <TextView
+            android:id="@+id/dingdanzhuizong_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="60dp"
+            android:text="订单号："
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <!-- 第2个TableLayout-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btn_dingdanqingkong"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/btn_bg1"
+            android:text="清空" />
+
+        <Button
+            android:id="@+id/btn_dingdanchaxun"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/btn_bg1"
+            android:text="查询"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_dingdanqingkong"
+            android:layout_toEndOf="@+id/btn_dingdanqingkong" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
